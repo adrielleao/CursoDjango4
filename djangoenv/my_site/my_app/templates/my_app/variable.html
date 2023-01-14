@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>VARIABLES HTML!!!</h1>
+
+    
+    {% comment %} 
+    <h2>Her first name was {{first_name | lower | capfirst}} and her last name was {{last_name | capfirst}}</h2>
+    <h2>{{some_list}}</h2>
+    <h2>{{some_list.0}}</h2>
+    <h2>{#   This is a comment  #}</h2> 
+    {% endcomment %}
+
+{% comment %} 
+    <h1>{{some_list}}</h1>
+    {% for item in  some_list%}
+        <p>{{item}}</p>
+    {% endfor %}
+     
+
+    <ul>
+    {% for item in  some_list%}
+        <li>{{item}}</li>
+    {% endfor %}
+    </ul> 
+
+    {% for k,v in  some_dict.items%}
+        <li>{{k}}</li>
+    {% endfor %}
+    
+    {% if  user_logged_in == True%}
+        <h1>Welcome back you are logged in</h1>
+    
+    {% else %}
+        <h1>You are not logged in</h1>
+    {% endif %}
+
+    <ul>
+        {% for num in  some_list%}
+            {% if num == 2 %}
+                <h1>Number {{num}} is in the list</h1>
+            {% else %}
+                <h1>This number {{num}} is not in the list</h1>
+            {% endif %}
+        {% endfor %}
+    </ul> {% endcomment %}
+</body>
+</html>
